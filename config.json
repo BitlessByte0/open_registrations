@@ -1,0 +1,17 @@
+{
+    "webhookUrl" : "https://discord.com/api/webhooks/722538292381483045/DTYfCv4u9rNjWI_cBUj1HCiXoyGbqpHW5RdP-Ve47E-C_sIZEia8OmnAkT2fRnbghvOD",
+    "quietTimeHours":{ "start" : "23", "end" : "23" },
+    "checkMaintenance": "1",
+    "sendClosedNotifications": "0",
+    "sites": [
+        {
+            "name": "drunkenSlug","url":"https://drunkenslug.com/register", "search": "Sorry! The Bar is closed.", "open":"1"
+        },
+        {
+            "name": "omgwtfnzbs","url":"https://omgwtfnzbs.me/register", "search": "Public Registrations have been <font color=\"red\">disabled</font> by the site admin</b><br /><b>In order to register, you need at least a <u>valid invite code</u>", "open":"1"
+        },
+        {
+            "name": "nzbplanet","url":"https://nzbplanet.net/register", "search": "Registrations are currently invite only", "open":"1"
+        }
+    ]
+}
