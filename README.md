@@ -1,5 +1,7 @@
 ## Description
 ***Note: It is recommended to run this script on a server using cron jobs***
+
+
 This Python script is designed to check private websites to see if they currently have open registrations and then send a Discord message via a bot informing users of the website's current registration state. There will be one Discord message for each site that is set to be checked in the config file.
 
 To do so, the script looks at the website's registration page and checks if it has a specific string which defines that it is closed. For example, if the phrasing "Open registrations are currently closed. You will need an invite code to join!" is found on the page, then the site is closed. However, if this phrase is not found on the website, the site is open. 
@@ -13,8 +15,12 @@ The second false positive can be limited. To do so, the user can define a *check
 This setting has not been thoroughly tested, so ***use at your own risk***
 
 The user has the option to set a quiet time for the script. During this time, there will be no Discord messages sent for *closed* registrations. *Open* registrations will ignore this quiet time and a Discord message will always be sent if a website is found to have *open* registration. 
+
+
 ***Note: Quiet time is set only by hours (no minutes or seconds) and it is in a 24hr format***
 ***Note: Quiet time is set in PST***
+
+
 Quiet time can be used to fit the following scenario:
 The user wants to only receive one notification per day if the site is closed. But, the user also wants to run the script once an hour to be immediately notified of open registrations. In this case, the user can set his quiet time from 01 until 24. When the script runs at 00 it will send a message stating the site is closed (granted that is the case). The 23 other times it runs that day, no Discord messages will be sent unless the site has open registrations.
 
@@ -26,23 +32,38 @@ To ensure best results when setting up your config file, visit a site that curre
 Link: **https://www.lifewire.com/view-html-source-in-chrome-3466725**
 
 
+
 ## Settings
 #### ***The only settings that will need changed are in config.json***
 **webhookUrl**: This is the webhook url for your Discord bot
 
+
 **quietTimeHours**: Quiet time disables Discord messages for closed registrations (open registrations ignore quitTimeHours and send a Discord message anyway)
+
+
     **start**: This is the hour when quitTime will start (in PST)
+
+
     **end**: This is the hour when quitTime will end (in PST)
 
 **checkMaintenance**: Can be either a 1 or a 0. 1 enables check for maintenance and 0 disables it
 
+
 **sendClosedNotifications**: Can be either a 1 or a 0. 1 enables sending closed notifications and 0 disables it
+
 
 **sites**:
     **name**: The name of the site you want to search (only necessary for naming in Discord messages and can be left as a blank string)
+
+
     **url**: The url of the site you want to check (be sure that it is the registration part of the site. i.e. https://drunkenslug.com/***register***)
+
+
     **search***: This is the search string which will tell if the registration is open or closed (make sure it's a good one)
+
+
     **open**: Can be either a 1 or a 0. 1 enables checking this site and 0 disables it
+
 
 
 ## Obtaining a Discord Webhook Url
