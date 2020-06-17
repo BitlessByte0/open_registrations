@@ -35,36 +35,36 @@ Link: **https://www.lifewire.com/view-html-source-in-chrome-3466725**
 
 ## Settings
 #### ***The only settings that will need changed are in config.json***
-**webhookUrl**: This is the webhook url for your Discord bot
+    webhookUrl: This is the webhook url for your Discord bot
 
 
-**quietTimeHours**: Quiet time disables Discord messages for closed registrations (open registrations ignore quitTimeHours and send a Discord message anyway)
+    quietTimeHours: Quiet time disables Discord messages for closed registrations (open registrations ignore quitTimeHours and send a Discord message anyway)
 
 
-  **start**: This is the hour when quitTime will start (in PST)
+        start**: This is the hour when quitTime will start (in PST)
 
 
-  **end**: This is the hour when quitTime will end (in PST)
+        end: This is the hour when quitTime will end (in PST)
 
 
-**checkMaintenance**: Can be either a 1 or a 0. 1 enables check for maintenance and 0 disables it
+    checkMaintenance: Can be either a 1 or a 0. 1 enables check for maintenance and 0 disables it
 
 
-**sendClosedNotifications**: Can be either a 1 or a 0. 1 enables sending closed notifications and 0 disables it
+    sendClosedNotifications: Can be either a 1 or a 0. 1 enables sending closed notifications and 0 disables it
 
 
-**sites**:
+    sites:
 
-  **name**: The name of the site you want to search (only necessary for naming in Discord messages and can be left as a blank string)
-
-
-  **url**: The url of the site you want to check (be sure that it is the registration part of the site. i.e. https://drunkenslug.com/***register***)
+        name: The name of the site you want to search (only necessary for naming in Discord messages and can be left as a blank string)
 
 
-  **search***: This is the search string which will tell if the registration is open or closed (make sure it's a good one)
+        url: The url of the site you want to check (be sure that it is the registration part of the site. i.e. https://drunkenslug.com/***register***)
 
 
-  **open**: Can be either a 1 or a 0. 1 enables checking this site and 0 disables it
+        search: This is the search string which will tell if the registration is open or closed (make sure it's a good one)
+
+
+        open: Can be either a 1 or a 0. 1 enables checking this site and 0 disables it
 
 
 
