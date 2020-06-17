@@ -7,8 +7,9 @@ This Python script is designed to check private websites to see if they currentl
 To do so, the script looks at the website's registration page and checks if it has a specific string which defines that it is closed. For example, if the phrasing "Open registrations are currently closed. You will need an invite code to join!" is found on the page, then the site is closed. However, if this phrase is not found on the website, the site is open. 
 
 This method can return a false positive in two scenarios:
-    1. The site owner has chosen to change the wording of their site
-    2. The site is down for maintenance
+
+1. The site owner has chosen to change the wording of their site
+2. The site is down for maintenance
 
 The first false positive cannot be avoided, and users will have to update their settings in order to fix this false positive if it occurs.
 The second false positive can be limited. To do so, the user can define a *check for maintenance* setting to be true or false. If set, the script will then check for the word "maintenance" in the site's HTML. If found, the script will send a Discord message saying the site is down for maintenance. If set, both "maintenance" and the user defined search query must *not* be found on the website for a Discord message to be sent stating that the site is open.
@@ -77,10 +78,10 @@ To get a Discord Webhook Url, you will need to be managing a Discord server. If 
 
 Link: **https://www.howtogeek.com/318890/how-to-set-up-your-own-discord-chat-server/**
 
-'*  Inside Discord, right click on your server.
-'*  Goto "Server Settings", then "Webhooks".
-'*  Select "Create Webhook".
-'*  Give your bot a name, and choose which channel it will reside in.
-'*  Copy the provided Webhook Url (the Url can be accessed at anytime by clicking edit on your Webhook).
+*  Inside Discord, right click on your server.
+*  Goto "Server Settings", then "Webhooks".
+*  Select "Create Webhook".
+*  Give your bot a name, and choose which channel it will reside in.
+*  Copy the provided Webhook Url (the Url can be accessed at anytime by clicking edit on your Webhook).
 
 This is the Url you will need to put in the config.json file under webhookUrl
