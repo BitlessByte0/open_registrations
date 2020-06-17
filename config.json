@@ -1,5 +1,5 @@
 {
-    "webhookUrl" : "https://discord.com/api/webhooks/722538292381483045/DTYfCv4u9rNjWI_cBUj1HCiXoyGbqpHW5RdP-Ve47E-C_sIZEia8OmnAkT2fRnbghvOD",
+    "webhookUrl" : "https://discord.com/api/webhooks/",
     "quietTimeHours":{ "start" : "23", "end" : "23" },
     "checkMaintenance": "1",
     "sendClosedNotifications": "0",
