@@ -44,7 +44,7 @@ config.json:
 
 **webhookUrl**: This is the webhook url for your Discord bot
 
-**quietTimeHours**: Quiet time disables Discord messages for closed registrations (open registrations ignore quitTimeHours and send a Discord message anyway)
+**quietTimeHours**:  
 
 -   **start**: This is the hour when quitTime will start (in PST)
 
