@@ -1,4 +1,5 @@
 ## Description
+***Note: It is recommended to run this script on a server using cron jobs***
 This Python script is designed to check private websites to see if they currently have open registrations and then send a Discord message via a bot informing users of the website's current registration state. There will be one Discord message for each site that is set to be checked in the config file.
 
 To do so, the script looks at the website's registration page and checks if it has a specific string which defines that it is closed. For example, if the phrasing "Open registrations are currently closed. You will need an invite code to join!" is found on the page, then the site is closed. However, if this phrase is not found on the website, the site is open. 
