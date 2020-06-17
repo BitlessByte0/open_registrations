@@ -12,7 +12,7 @@ This method can return a false positive in two scenarios:
 2. The site is down for maintenance
 
 The first false positive cannot be avoided, and users will have to update their settings in order to fix this false positive if it occurs.
-The second false positive can be limited. To do so, the user can define a *check for maintenance* setting to be true or false. If set, the script will then check for the word "maintenance" in the site's HTML. If found, the script will send a Discord message saying the site is down for maintenance. If set, both "maintenance" and the user defined search query must *not* be found on the website for a Discord message to be sent stating that the site is open.
+The second false positive can be limited. To do so, the user can define a *check for maintenance* setting to be true or false. If set, the script will then check for the word "maintenance" in the site's HTML. If found, the script will send a Discord message saying the site is down for maintenance. If set, both "maintenance" and the user defined search query must *not* be found on the website for a Discord message to be sent stating that the site is open.  
 This setting has not been thoroughly tested, so ***use at your own risk***
 
 The user has the option to set a quiet time for the script. During this time, there will be no Discord messages sent for *closed* registrations. *Open* registrations will ignore this quiet time and a Discord message will always be sent if a website is found to have *open* registration. 
@@ -31,7 +31,8 @@ The user has the option to configure sending alerts for closed registrations. If
 
 The user also has the option to enable/disable a specific site in their config file. This is done by setting the *open* field in the config file. If enabled, the site will be checked for open/closed registrations when the script is ran, otherwise, the script will ignore this site. This can be handy if the user succesfully registers for a site, but doesn't want to delete its information from the config file in case a friend needs them to check for open registrations in the future.
 
-To ensure best results when setting up your config file, visit a site that currently has closed registrations. Find a defining piece of text on their site that says their registration is closed, and copy that into your config file. Some sites will inject HTML into these messages (an example of this is seen in the provided config file). In these cases, you will need to copy the HTML code for the message and not just the text. Using the link below, you can view the HTML code in Chrome and copy it from there (if you don't have Chrome, a quick search online will help you learn how to do it in your browser of choice).
+To ensure best results when setting up your config file, visit a site that currently has closed registrations. Find a defining piece of text on their site that says their registration is closed, and copy that into your config file. Some sites will inject HTML into these messages (an example of this is seen in the provided config file). In these cases, you will need to copy the HTML code for the message and not just the text. Using the link below, you can view the HTML code in Chrome and copy it from there (if you don't have Chrome, a quick search online will help you learn how to do it in your browser of choice).  
+
 Link: **https://www.lifewire.com/view-html-source-in-chrome-3466725**
 
 
