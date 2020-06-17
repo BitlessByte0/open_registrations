@@ -129,7 +129,12 @@ try:
                 # If user specifies, check if the HTML contains the word maintenance 
                 #   ...before sending Discord message stating the site is open
                 if checkMaintenance:
-                    if "maintenance" not in pageText:
+                    if "maintenance" in pageText:
+                        print(site + "is down for maintenance.")
+                        print("Sending Discord message...")
+                        webhook = DiscordWebhook(url=webhookUrl, content=site + ' is down for maintenance!' + '\n' + url)
+                        response = webhook.execute()
+                    else:
                         print("Sending Discord message...")
                         print("Registration is open for " + site)
                         webhook = DiscordWebhook(url=webhookUrl, content='Registration is open for ' + site + '\n' + url)
