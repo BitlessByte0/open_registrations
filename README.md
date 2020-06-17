@@ -18,6 +18,8 @@ The user has the option to set a quiet time for the script. During this time, th
 
 
 ***Note: Quiet time is set only by hours (no minutes or seconds) and it is in a 24hr format***
+
+
 ***Note: Quiet time is set in PST***
 
 
@@ -35,13 +37,15 @@ Link: **https://www.lifewire.com/view-html-source-in-chrome-3466725**
 
 ## Settings
 #### ***The only settings that will need changed are in config.json***
+
+config.json:
     webhookUrl: This is the webhook url for your Discord bot
 
 
     quietTimeHours: Quiet time disables Discord messages for closed registrations (open registrations ignore quitTimeHours and send a Discord message anyway)
 
 
-        start**: This is the hour when quitTime will start (in PST)
+        start: This is the hour when quitTime will start (in PST)
 
 
         end: This is the hour when quitTime will end (in PST)
@@ -70,12 +74,13 @@ Link: **https://www.lifewire.com/view-html-source-in-chrome-3466725**
 
 ## Obtaining a Discord Webhook Url
 To get a Discord Webhook Url, you will need to be managing a Discord server. If you don't already have managerial access to a Discord server, you can create a new server using the link below.
+
 Link: **https://www.howtogeek.com/318890/how-to-set-up-your-own-discord-chat-server/**
 
-Inside Discord, right click on your server.
-Goto "Server Settings", then "Webhooks".
-Select "Create Webhook".
-Give your bot a name, and choose which channel it will reside in.
-Copy the provided Webhook Url (the Url can be accessed at anytime by clicking edit on your Webhook).
+'*  Inside Discord, right click on your server.
+'*  Goto "Server Settings", then "Webhooks".
+'*  Select "Create Webhook".
+'*  Give your bot a name, and choose which channel it will reside in.
+'*  Copy the provided Webhook Url (the Url can be accessed at anytime by clicking edit on your Webhook).
 
 This is the Url you will need to put in the config.json file under webhookUrl
