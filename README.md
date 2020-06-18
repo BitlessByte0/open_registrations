@@ -79,7 +79,7 @@ Link: **https://www.howtogeek.com/318890/how-to-set-up-your-own-discord-chat-ser
 This is the Url you will need to put in the config.json file under webhookUrl
 
 ## Credits
-- Martin (provided me with a power shell script which was the backbone for this project)
+- Martin Smyth (provided me with a power shell script which was the backbone for this project)
 
 ## Requirements
 
