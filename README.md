@@ -80,3 +80,8 @@ This is the Url you will need to put in the config.json file under webhookUrl
 
 ## Credits
 - Martin (provided me with a power shell script which was the backbone for this project)
+
+## Requirements
+
+### Python Packages:
+- discord-webhook 
